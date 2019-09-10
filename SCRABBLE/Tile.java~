@@ -1,0 +1,21 @@
+public class Tile
+{
+  private String letterImage;
+  
+  public Tile(String i)
+  {
+    letterImage = i;
+  }
+  
+  public String getImage()
+  {
+    return letterImage;
+  }
+  
+  public String getLetter()
+  {
+    String letter = letterImage.substring(0, letterImage.indexOf("."));
+    return letter;
+  }
+  
+}
